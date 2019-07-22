@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Google Charts - Simple Bar Charts
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Simple Column Chart</ion-card-subtitle>
+      <ion-card-title>Population of Largest U.S. Cities</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="columnChart1"></google-chart>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Stacked Column Chart</ion-card-subtitle>
+      <ion-card-title>Population of Largest U.S. Cities</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="columnChart2"></google-chart>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Stacked Bar Chart</ion-card-subtitle>
+      <ion-card-title>Population of Largest U.S. Cities</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="barChart"></google-chart>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Google Charts - Pie
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Simple Pie Chart</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="pieChart"></google-chart>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>3D Pie Chart</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="pieChart3D"></google-chart>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Simple Donut Chart</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="donutChart"></google-chart>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Exploded Pie Chart</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="explodedChart"></google-chart>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

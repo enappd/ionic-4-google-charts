@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Google Charts - Simple Line Charts
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Simple Line Chart</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="lineChart"></google-chart>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Grouped Line Chart</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="groupLineChart"></google-chart>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Smoothed Line Chart</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="smoothLineChart"></google-chart>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Line Chart with Trendline</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <google-chart [data]="trendline"></google-chart>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
